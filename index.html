@@ -32,10 +32,10 @@
 					<nav class="ba-float-right">
 						<ul class="ba-menu">
 							<li><a href="#">Hello</a></li>
-							<li><a href="#">Services</a></li>
-							<li><a href="#">About us</a></li>
-							<li><a href="#">Our work </a></li>
-							<li><a href="#">Contact us</a></li>
+							<li><a href="#services">Services</a></li>
+							<li><a href="#about us">About us</a></li>
+							<li><a href="#our work">Our work</a></li>
+							<li><a href="#contact us">Contact us</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -45,18 +45,18 @@
 						Aenean commodo ligula eget dolor. Aenean massa..
 					</p>
 				</div>
-				<a href="#" class="ba-arrow"></a>
+				<a href="#services" class="ba-arrow"></a>
 			</div>
 		</div>
 
 		<main role="main" >
 
-			<section class="ba-services">
+			<section id="services" class="ba-services">
 				<div class="ba-container">
 					<h2 class="ba-services__title">Our services</h2>
 					<div class="ba-grid">
 						<div class="ba-width-1-3">
-							<img src="img/services/phone.png" alt="phone">
+							<div class="ba-services__img"><img src="img/services/phone.png" alt="phone"></div>
 							<div class="ba-services__block">
 								<h3>App Design</h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisic-<br>
@@ -65,7 +65,7 @@
 								</div>
 							</div>
 							<div class="ba-width-1-3">
-								<img src="img/services/responsive.png" alt="phone">
+								<div class="ba-servises__img"><img src="img/services/responsive.png" alt="phone"></div>
 								<div class="ba-services__block">
 									<h3>Responsive Layout</h3>
 									<p>
@@ -74,7 +74,7 @@
 									</div>
 								</div>
 								<div class="ba-width-1-3">
-									<img src="img/services/pixel.png" alt="phone">
+									<div class="ba-servises__img"><img src="img/services/pixel.png" alt="phone"></div>
 									<div class="ba-services__block">
 										<h3>
 											Pixel Perfect Design</h3>
@@ -87,7 +87,7 @@
 								</div>
 							</section>
 
-							<section class="ba-dolore">
+							<section id="about us" class="ba-dolore">
 								<div class="ba-container">
 									<div class="ba-grid">
 										<div class="ba-width-1-2">
@@ -107,18 +107,33 @@
 									</div>
 								</section>
 
-								<section class="ba-work">
+								<section id="our work" class="ba-work">
 									<div class="ba-container">
 										<h2 class="ba-work__title">Our work</h2>
 										<div class="ba-grid">
 											<div class="ba-width-1-3">
-												<img src="img/works/Layer17.jpg" alt="Layer17">
+												<a href="#" class="ba-work__product">
+													<img src="img/works/Layer17.jpg" alt="Layer17">
+													<h4 class="ba-work__h4">
+														Kinderen Planet
+													</h4>
+												</a>
 											</div>
 											<div class="ba-width-1-3">
-												<img src="img/works/Layer16.jpg" alt="Layer17">
+												<a href="#" class="ba-work__product">
+													<img src="img/works/Layer16.jpg" alt="Layer17">
+													<h4 class="ba-work__h4">
+														Jetindus airlines
+													</h4>
+												</a>
 											</div>
 											<div class="ba-width-1-3">
-												<img src="img/works/Layer21.jpg" alt="Layer17">
+												<a href="#" class="ba-work__product">
+													<img src="img/works/Layer21.jpg" alt="Layer17">
+													<h4 class="ba-work__h4">
+														Trimplement
+													</h4>
+												</a>
 											</div>
 										</div>
 										<a href="#" class="ba-button ba-button--work">more</a>
@@ -126,17 +141,23 @@
 								</section>
 
 							</main>
-							<footer class="ba-footer">
+							<footer id="contact us" class="ba-footer">
 								<div class="ba-container">
 									<h3>get in touch</h3>
+									<div class="ba-footer__socials">
+										<a class="ba-footer__socials--twitter" href="#"></a>
+										<a class="ba-footer__socials--facebook" href="#"></a>
+										<a class="ba-footer__socials--linked" href="#"></a>
+										<a class="ba-footer__socials--vk" href="#"></a>
+										<a class="ba-footer__socials--be" href="#"></a>
+									</div>
+									<form class="ba-footer__form" action="#" method="post">
+										<input type="text" Name="Name" required placeholder="Name">
+										<input type="email" name="email" required placeholder="Email">
+										<textarea required placeholder="Message"></textarea>
+									</form>
+									<a href="#" class="ba-button ba-button--contact">SEND</a>
 								</div>
-								<form class="ba-footer__form" action="#" method="post">
-									<input type="text" required placeholder="Name">
-									<input type="email" name="email" required placeholder="Email">
-									<textarea required placeholder="Message"></textarea>
-								</form>
-								<a href="#" class="ba-button ba-button--contact">SEND</a>
-
 							</footer>
 							<script src="js/main.js"></script>
 						</body>
